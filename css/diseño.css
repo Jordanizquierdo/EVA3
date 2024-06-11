@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(223, 255, 255);
+}
+#titulo{
+    text-align: center;
+    background-color: aliceblue;
+}
+#vision{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+#mision{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#cosas{
+    background-color: red;
+}
+img{
+    display: inline;
+
+}
+#uno{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    display: block;
+    border-style: solid;
+    border-radius: 8px;
+
+}
+#mision,#vision{
+    border-style: double;
+}
+#redes{
+    width: 60%;
+    margin: auto;
+
+}
+#formulario{
+    width: 40%;
+    margin: auto;
+    border-radius: 8px;
+    border-style: groove;
+}
+label{
+    display:block;
+}
+button{
+    display: block;
+}
+#menu{
+    width: 30%;
+    background-color: rgb(183, 128, 235);
+    border-style: double;
+    margin: auto;
+    text-align: center;
+}
+#video{
+    text-align: center;
+}
+#comidas{
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: blueviolet;
+}
