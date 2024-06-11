@@ -45,9 +45,6 @@ img{
     border-radius: 8px;
     border-style: groove;
 }
-label{
-    display:block;
-}
 button{
     display: block;
 }

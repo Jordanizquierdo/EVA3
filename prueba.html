@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/diseño.css">
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/firebase.js"></script>
 </head>
 <body>
     <div id="titulo"><h1>Veterianaria perrito</h1></div>
+    <button id="btnfondo" type="button">Cambiar contraste</button>
+    <button id="btnfuente">Cambiar fuente</button>
+
     <div id="mision">
         <h2>Mision</h2>
         <p>Nuestra Misión
@@ -53,17 +58,37 @@
             <a href="https://www.facebook.com/jacksperrow.cl"><h1>facebook</h1></a>
         </div>
         <div id="formulario">
-            <h2>Para consulta ingrese correo y consulta</h2>
+            <h2>Ingrese los siguientes datos:</h2>
             <form>
-                <label>Correo:
-                </label>
-                <input type="mail">
-                <label>Consulta:</label>
-                <textarea rows="10" cols="30"></textarea>
-                <button>Enviar</button>
+                <input type="text" id="nombre_duenio" placeholder="Nombre Dueño">
+                <input type="text" id="apellido_duenio" placeholder="Apellido Dueño">
+                <input type="text" id="nombre_mascota" placeholder="Nombre Mascota">
+                <input type="mail" id="correo" placeholder="Correo">
+                <input type="text" id="rut" placeholder="Rut Dueño">
 
-            
+                <label>Tipo de mascota:</label>
+                <input type="radio" name="tipo" value="perro"><label>Perro</label>
+                <input type="radio" name="tipo" value="gato"><label>Gato</label>
+                <select id="problema">
+                    <option value="estomacal">Estomacal</option>
+                    <option value="urinaria">Urinaria</option>
+                    <option value="motora">Motora</option>
+                </select>
+                <textarea rows="10" cols="30" id="consulta" placeholder="Consulta"></textarea>
+                <button type="button" id="btnEnviar">Enviar</button>
             </form>
+            <table>
+                <th>
+                    <td>Nombre Dueño</td>
+                    <td>Apellido Dueño</td>
+                    <td>Nombre Mascota</td>
+                    <td>Correo</td>
+                    <td>Rut</td>
+                    <td>Tipo</td>
+                    <td>Problema</td>
+                    <td>Consulta</td>
+                </th>
+            </table>
 
         </div>
         <div id="menu">
