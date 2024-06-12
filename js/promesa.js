@@ -30,6 +30,6 @@ export const actualizar = async(objeto,id)=>{
 }
 
 export const Eliminar = async(id)=>{
-    const ref = doc(db,"personas",id);
+    const ref = doc(db,"mascotas",id);
     await deleteDoc(ref);
 }

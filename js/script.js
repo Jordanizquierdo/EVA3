@@ -168,20 +168,14 @@ const cargar_datos = ()=>{
                 })
             })
             document.getElementById("DEL"+p.id).addEventListener("click",()=>{
-                if (confirm("Desea Eliminar la mascota de:\n"+p.Nombre_duenio+" llamada "+p.Nombre_mascota)){
-                    console.log("vamos a elminar")
+                if(confirm("Desea eliminara: \n"+p.id)){
+                    console.log("Eliminar")
                     Eliminar(p.id).then(()=>{
-                        alert("Eliminaste con exito")
+                        alert("Se elimino con exito")
                         cargar_datos()
-                    }).catch((e)=>{
-                        console.log(e)
                     })
                 }
-                else{
-                console.log("Cancelaste la eliminacion")
-                }
             })
-            
         })
     })
 }
@@ -214,20 +208,4 @@ const actualizar_datos = ()=>{
     }).catch((error1)=>{
         console.log(error1)
     })
-}
-
-const eliminar_dato = ()=>{
-    let id = document.getElementById("btnEliminar").value;
-    if (confirm("Desea a eliminar a:\n"+p.Nombre_mascota+" mascota de "+p.Nombre_duenio)){
-        console.log("vamos a elminar")
-        Eliminar(id).then(()=>{
-            alert("Eliminaste con exito")
-            cargar_datos()
-        }).catch((e)=>{
-            console.log(e)
-        })
-    }
-    else{
-        console.log("Cancelaste la eliminacion")
-    }
 }
