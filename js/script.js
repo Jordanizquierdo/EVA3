@@ -168,12 +168,16 @@ const cargar_datos = ()=>{
                 })
             })
             document.getElementById("DEL"+p.id).addEventListener("click",()=>{
-                if(confirm("Desea eliminara: \n"+p.id)){
-                    console.log("Eliminar")
+                if(confirm("Desea eliminar los registros de: \n"+p.Nombre_duenio+" y "+p.Nombre_mascota)){
                     Eliminar(p.id).then(()=>{
                         alert("Se elimino con exito")
                         cargar_datos()
+                    }).catch((error2)=>{
+                        console.log(error2)
                     })
+                }
+                else{
+                    console.log("Cancelaste la eliminacion")
                 }
             })
         })
