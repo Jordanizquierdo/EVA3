@@ -138,6 +138,10 @@ const registrar_consulta = ()=>{
     registrar(objeto).then(()=>{
         //si se ejecuta la funcion muestro un alert
         alert("Se registro con exito")
+        //cargo los datos nuevamente (utilizando la funcion cargar_datos)
+        cargar_datos()
+        //reinicio el formulario
+        document.getElementById("form").reset()
     }).catch((error)=>{
         //si no se ejecuta la funcion muestro en la consola un mensaje y el error
         console.log("hay campos vacios")
@@ -181,11 +185,9 @@ const cargar_datos = ()=>{
                 document.getElementById("nombre_mascota").value = p.Nombre_mascota;
                 document.getElementById("correo").value = p.Correo;
                 document.getElementById("rut").value = p.Rut;
-                document.getElementById("btnActualizar").value = p.id;
-                document.getElementById("btnEliminar").value = p.id;
-
                 document.getElementById("problema").value = p.Problema;
                 document.getElementById("consulta").value = p.Consulta;
+                document.getElementById("btnActualizar").value = p.id;
                 document.getElementById("btnEnviar").style.display = "none"
                 document.getElementById("btnActualizar").style.display = "inline"
                 document.getElementById("btnCancelar").style.display = "inline" 

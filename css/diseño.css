@@ -77,3 +77,12 @@ label.texto{
 #btnActualizar,#btnCancelar{
     display: none;
 }
+#btnfondo,#btnfuente{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    display: inline-flex;
+    background-color: #007bff;
+}
