@@ -1,9 +1,8 @@
 body{
-    background-color: rgb(223, 255, 255);
+    background-color: white;
 }
 #titulo{
     text-align: center;
-    background-color: aliceblue;
 }
 #vision{
     width: 40%;
@@ -40,7 +39,7 @@ img{
 
 }
 #formulario{
-    width: 40%;
+    width: 80%;
     margin: auto;
     border-radius: 8px;
     border-style: groove;
@@ -66,4 +65,15 @@ button{
     border-radius: 10px;
     border-style: solid;
     border-color: blueviolet;
+}
+p.noDisplay{
+    display: none;
+    color: red;
+}
+label.texto{
+    display: block;
+    font-size: 20px;
+}
+#btnActualizar,#btnCancelar{
+    display: none;
 }

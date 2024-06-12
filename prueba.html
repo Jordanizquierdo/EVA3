@@ -59,36 +59,60 @@
         </div>
         <div id="formulario">
             <h2>Ingrese los siguientes datos:</h2>
-            <form>
-                <input type="text" id="nombre_duenio" placeholder="Nombre Dueño">
-                <input type="text" id="apellido_duenio" placeholder="Apellido Dueño">
-                <input type="text" id="nombre_mascota" placeholder="Nombre Mascota">
-                <input type="mail" id="correo" placeholder="Correo">
-                <input type="text" id="rut" placeholder="Rut Dueño">
+            <form id="form">
+                <label class="texto">Ingrese su Nombre</label>
+                <input type="text" id="nombre_duenio" placeholder="Nombre Dueño"><br>
+                <p class="noDisplay" id="pnombre_duenio">Debe ingresar su nombre</p>
+                <label class="texto">Ingrese su Apellido</label>
+                <input type="text" id="apellido_duenio" placeholder="Apellido Dueño"><br>
+                <p class="noDisplay" id="papellido_duenio">Debe ingresar su apellido</p>
+                <label class="texto">Ingrese el Nombre de la Mascota</label>
+                <input type="text" id="nombre_mascota" placeholder="Nombre Mascota"><br>
+                <p class="noDisplay" id="pnombre_mascota">Debe ingresar el nombre de la mascota</p>
+                <label class="texto">Ingrese su Correo</label>
+                <input type="mail" id="correo" placeholder="Correo"><br>
+                <p class="noDisplay" id="pcorreo">Debe ingresar su corre</p>
+                <label class="texto">Ingrese su Rut</label>
+                <input type="text" id="rut" placeholder="Rut Dueño"><br>
+                <p class="noDisplay" id="prut">Debe ingresar su rut</p>
 
-                <label>Tipo de mascota:</label>
+                <label class="texto">Tipo de mascota:</label>
                 <input type="radio" name="tipo" value="perro"><label>Perro</label>
                 <input type="radio" name="tipo" value="gato"><label>Gato</label>
+                <p class="noDisplay" id="ptipo">Debe seleccionar una opcion de mascota</p>
+
+                <label class="texto">Ingrese el problema de su mascota:</label>
                 <select id="problema">
+                    <option value=""> </option>
                     <option value="estomacal">Estomacal</option>
                     <option value="urinaria">Urinaria</option>
                     <option value="motora">Motora</option>
                 </select>
+                <p class="noDisplay" id="pproblema">Debe ingresar el problema de su mascota</p>
+                <label class="texto">Ingrese su consulta:</label>
                 <textarea rows="10" cols="30" id="consulta" placeholder="Consulta"></textarea>
+                <p class="noDisplay" id="pconsulta">Debe ingresar su consulta</p><br>
                 <button type="button" id="btnEnviar">Enviar</button>
+                <button type="button" id="btnActualizar">Actualizar</button>
+                <button type="button" id="btnCancelar">Cancelar</button>
             </form>
             <table>
-                <th>
-                    <td>Nombre Dueño</td>
-                    <td>Apellido Dueño</td>
-                    <td>Nombre Mascota</td>
-                    <td>Correo</td>
-                    <td>Rut</td>
-                    <td>Tipo</td>
-                    <td>Problema</td>
-                    <td>Consulta</td>
-                </th>
+                <thead>
+                    <tr>
+                        <th>Nombre Dueño</th>
+                        <th>Apellido Dueño</th>
+                        <th>Nombre Mascota</th>
+                        <th>Correo</th>
+                        <th>Rut</th>
+                        <th>Tipo</th>
+                        <th>Problema</th>
+                        <th>Consulta</th>
+                    </tr>
+                </thead>
+                <tbody id="CuerpoTabla">
+                </tbody>
             </table>
+
 
         </div>
         <div id="menu">
